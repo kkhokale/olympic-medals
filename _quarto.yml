@@ -9,7 +9,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - sources.qmd
+      - href: sources.qmd
+      - text: Sources
 
 format:
   html:
