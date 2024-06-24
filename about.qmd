@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+Hello! My name is Krisha Khokale. You can see my projects on [Github](https://github.com/kkhokale) or contact me at krisha.khokale@gmail.com. 
+
+This project showcases how many Olympics medals the twenty most decorated countries have won using data from 1896 to 2022. Click [here](https://github.com/kkhokale/olympic-medals) to see the Github repo for this project.
+
+This project was created as a part of [David Kane's Data Science Bootcamp](https://bootcamp.davidkane.info/). 

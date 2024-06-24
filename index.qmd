@@ -1,0 +1,51 @@
+---
+title: "Number of Olympic Medals by Country"
+execute: 
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| message: false
+
+library(tidyverse)
+library(tidycensus)
+
+olympic_medals <- read_csv("olympics_medals_country_wise.csv")
+```
+
+```{r}
+#| label: plot
+
+medals_long <- olympic_medals |> 
+  arrange(desc(total_total)) |> 
+  head(20) |>
+  select(countries, total_gold, total_silver, total_bronze) |> 
+  pivot_longer(cols = starts_with("total_"), 
+               names_to = "medal_type", 
+               values_to = "count") |> 
+  mutate(medal_type = recode(medal_type, 
+                             total_gold = "Gold", 
+                             total_silver = "Silver", 
+                             total_bronze = "Bronze"))
+
+
+ggplot(medals_long, aes(x = countries, 
+                        y = count, 
+                        fill = medal_type)) +
+  geom_col() +
+  labs(title = "The United States has a disproportionately large number of medals.",
+       x = "Country",
+       y = "Total Medals",
+       fill = "Medal Type") +
+  scale_fill_manual(values = c("Gold" = "#FFD700", 
+                               "Silver" = "#C0C0C0", 
+                               "Bronze" = "#CD7F32")) +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1),
+        plot.title = element_text(hjust = 0.5),
+        panel.background = element_rect("white"),
+        panel.grid = element_line("lightgrey"))
+```
+
+

@@ -1,0 +1,6 @@
+---
+title: "Sources"
+format: html
+---
+
+The data source used for the project can be found [here](https://www.kaggle.com/datasets/surajjha101/countries-olympics-medals-since-1896/data). The data was very clean and straight-forward to work with. It did have a lot of variables and entries to work with, so I pared it down to twenty countries and four variables. It was also necessary for me to create new variables in order to create and properly depict the plot I wanted. 
