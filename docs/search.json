@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "The data source used for the project can be found here. The data was very clean and straight-forward to work with. It did have a lot of variables and entries to work with, so I pared it down to twenty countries and four variables. It was also necessary for me to create new variables in order to create and properly depict the plot I wanted."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello! My name is Krisha Khokale. You can see my projects on Github or contact me at krisha.khokale@gmail.com.\nThis project showcases how many Olympics medals the twenty most decorated countries have won using data from 1896 to 2022. Click here to see the Github repo for this project.\nThis project was created as a part of David Kane’s Data Science Bootcamp."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Number of Olympic Medals by Country",
+    "section": "",
+    "text": "The Olympic Games have been a worldwide attraction for well over a century. The data used for this project was sourced from a public and reputable database, and it required no further cleaning. The provided variables were utilized to create a new column that would allow the data to be visualized in an easy manner. This was then used to map the number of medals that each of the top twenty countries received. The United States holds a little more than twice the number of medals compared to the second most decorated country, the Soviet Union."
+  }
+]
