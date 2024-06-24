@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: f627c47c-f9a5-44c2-add1-ce473059be58
+      url: 'https://kkhokale.quarto.pub/olympic-medals'

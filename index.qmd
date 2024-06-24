@@ -34,8 +34,7 @@ ggplot(medals_long, aes(x = countries,
                         y = count, 
                         fill = medal_type)) +
   geom_col() +
-  labs(title = "The United States has a disproportionately large number of medals.",
-       x = "Country",
+  labs(x = "Country",
        y = "Total Medals",
        fill = "Medal Type") +
   scale_fill_manual(values = c("Gold" = "#FFD700", 
@@ -43,9 +42,8 @@ ggplot(medals_long, aes(x = countries,
                                "Bronze" = "#CD7F32")) +
   theme(axis.text.x = element_text(angle = 45, 
                                    hjust = 1),
-        plot.title = element_text(hjust = 0.5),
         panel.background = element_rect("white"),
         panel.grid = element_line("lightgrey"))
 ```
 
-
+The Olympic Games have been a worldwide attraction for well over a century. The data used for this project was sourced from a public and reputable database, and it required no further cleaning. The provided variables were utilized to create a new column that would allow the data to be visualized in an easy manner. This was then used to map the number of medals that each of the top twenty countries received. The United States holds a little more than twice the number of medals compared to the second most decorated country, the Soviet Union. 
